@@ -56,7 +56,8 @@ public Empleado(int dni, double salario, String apellido, String nombre) {
     /// Considere crear un metodo que facilite imprimir por pantalla las
     /// características del objeto de la siguiente forma: Empleado dni=?, nombre=?, apellido=?, salario=?
 
-    public void muestraEmpleado (Empleado empleado){
+    public void mostrarEmpleado (Empleado empleado){
+        System.out.println("Empleado");
         System.out.println("Dni: " +empleado.dni);
         System.out.println("Nombre y apellido: "+empleado.nombre +empleado.apellido);
         System.out.println("Salario: "+empleado.salario);
