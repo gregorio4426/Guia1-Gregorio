@@ -1,31 +1,32 @@
 public class Libro {
     /// 3. Modela un objeto Libro que tenga las siguientes características: id (único y
     /// autoincremental), título, autor, precio y cantidad de copias disponibles.
-    private int incrementoIds = 0;
     int id;
     String titulo, autor;
     double precio;
     double copias;
+static int cont = 0;
 
     public Libro(String titulo, String autor, double precio, int copias) {
-        this.id = incrementoIds+1;
+        this.id = this.id + cont++;
         this.titulo = titulo;
         this.autor = autor;
         this.precio = precio;
         this.copias = copias;
+
     }
 
     public int getId() {
         return id;
     }
 
-    public int getIncrementoIds() {
-        return incrementoIds;
-    }
+    //public int getIncrementoIds() {
+      //  return incrementoIds;
+    //}
 
-    public void setIncrementoIds(int incrementoIds) {
-        this.incrementoIds = incrementoIds;
-    }
+    //public void setIncrementoIds(int incrementoIds) {
+      //  this.incrementoIds = incrementoIds;
+    //}
 
     public double getPrecio() {
         return precio;

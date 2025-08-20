@@ -52,6 +52,17 @@ System.out.println("El salario anual del empleado " + empleado2.nombre + " " + e
 
         /// Ejercicio 4
 
+///  1. Agregar ítem: Inicializa un objeto ItemVenta con valores proporcionados por
+/// el usuario.
+
+        ItemVenta item1 = new ItemVenta();/// CREA ITEM CONSTRUCTOR VACIO
+        item1.cargarItem();/// CARGA ITEM YA CREADO
+        /// 2. Imprime el objeto usando el mEtodo correspondiente.
+        System.out.println(item1.muestraItem(item1));
+        ///3. Permite al usuario ingresar una nueva cantidad y actualiza el atributo
+        /// cantidad del ítem de venta.
+        item1.cantidad = item1.nuevaCantidad(item1);
+        System.out.println(item1.muestraItem(item1));
     }
 
 
