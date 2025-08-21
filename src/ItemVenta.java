@@ -68,4 +68,15 @@ public class ItemVenta {
         item.cantidad = scanner.nextInt();
         return cantidad; /// igualar funcion a itemX.cantidad
     }
+
+    /// 4. Permite al usuario ingresar un nuevo precio unitario y actualiza el atributo
+    /// precioUnitario del ítem de venta.
+
+    public double nuevoPrecio (ItemVenta item){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese el nuevo precio del item: ");
+        item.precioUnitario = scanner.nextInt();
+        return precioUnitario;
+
+    }
 }

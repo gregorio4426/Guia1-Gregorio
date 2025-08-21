@@ -63,6 +63,14 @@ System.out.println("El salario anual del empleado " + empleado2.nombre + " " + e
         /// cantidad del ítem de venta.
         item1.cantidad = item1.nuevaCantidad(item1);
         System.out.println(item1.muestraItem(item1));
+        /// /// 4. Permite al usuario ingresar un nuevo precio unitario y actualiza el atributo
+        ///     /// precioUnitario del ítem de venta.
+        item1.precioUnitario = item1.nuevoPrecio(item1);
+        System.out.println(item1.muestraItem(item1));
+/// 5. Imprime el precio total calculado por el metodo calcularPrecioTotal().
+        System.out.println(item1.calcularPrecioTotal(item1));
+        ///  6. Sale del programa.
+       /// return 0;
     }
 
 
